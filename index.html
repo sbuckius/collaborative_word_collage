@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="word_collage.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+<title>Collaborative Word Collage</title>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+      #controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 8px;
+        z-index: 10;
+      }
+      input, button {
+        font-size: 16px;
+        padding: 5px;
+        margin-right: 6px;
+      }
+    </style>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+<div id="controls">
+      <div id="prompt">
+        <strong>Describe a time when you feel that your work was displaced by AI.</strong><br>
+        Type your answer and then click somewhere on the screen to add to the word collage.
+      </div>
+      <input type="text" id="textInput" placeholder="Type your answer here">
+      <div id="button-group">
+        <button id="clearBtn">Clear Collage</button>
+        <button id="saveBtn">Save Image</button>
+      </div>
+    </div>
+</body>
+</html>
